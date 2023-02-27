@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>React JSX</title>
+  <style>
+    .root2 {color: orange;}
+    #root3 {color: red; font-style: italic;}
+  </style>
+</head>
+<body>
+<div id="root1"></div>
+<div id="root2"></div>
+<div id="root3"></div>
+<div id="root4"></div>
+<div id="root5"></div>
+<div id="root6"></div>
+
+<script src="js/vendor/react/react@16.14.dev.js"></script>
+<script src="js/vendor/react/react-dom@16.14.dev.js"></script>
+<script src="js/vendor/bable.min.js"></script>
+
+<script type="text/babel">
+    // compile
+    //특정언어로 작성된 소스코드를 다른 언어로 변환하는 것을 의미
+    // Java -> bytecode
+
+    //transpiling
+    //특정언어로 작성된 소스코드를
+    //비슷한 수준의 추상화를 가진 다른 언어로 변환하는 것을 의미
+    //es6 -> es5 (버전 변경)
+
+    //babel
+    // 모든 브라우저가 es6을 지원하지 않기 때문에
+    // 이를 es5 코드를 변환시키는 과정 필요
+      ReactDOM.render(
+          <h1> Hello, World!!</h1>,
+          document.querySelector('#root1') );
+
+  ReactDOM.render(
+         <h1 className='root2'> Hello, World!!</h1>,
+          document.querySelector('#root2') );
+
+  ReactDOM.render(
+           <h2 id='root3'><span> Hello</span>, World!!</h2>,
+          document.querySelector('#root3') );
+
+  ReactDOM.render(
+          <h2 id='root3'><span> Hello</span>, <em>Wonderfull</em>World!!</h2>,
+          document.querySelector('#root4') );
+
+  ReactDOM.render(
+          <h3 className='abc' style = {{textAlign: 'center'}}
+           onClick={ ()=>{alert('Hello, Again~!!');} }>
+           Hellp, Another World!! </h3>,
+          document.querySelector('#root5') );
+
+  let myClass = 'root2';
+  const myText = () => 'World!';
+  ReactDOM.render(
+            <p className={myClass}>
+                <span>10 * 10 = {10 * 10} </span>
+                <span>Hello, my  {myText()}</span>
+            </p>,
+      document.querySelector('#root6') );
+</script>
+</body>
+</html>
