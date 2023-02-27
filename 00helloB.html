@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello React</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const { Fragment } = React;
+        const App = () => { //UI를 컴퍼넌트로 정의
+            return( // UI 리턴시 하나의 요소만 가능!! (하나로 묶어줌)
+                <Fragment>
+                <p id="p1" style={{color: 'red'}}> Just React</p>
+                <p id="p2" style={{color: 'blue'}}> 2022</p>
+                <button>Change Content</button>
+                </Fragment>
+            );
+        };
+        ReactDOM.render(<App />, // 위에서 정의한 컴퍼넌트 호출
+                        document.getElementById('app'));
+    </script>
+</body>
+</html>
