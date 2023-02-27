@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello React</title>
+    <style>
+        .POne {color: red}
+        .PTwo {color: green}
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="js/vendor/react/react@16.14.dev.js"></script>
+    <script src="js/vendor/react/react-dom@16.14.dev.js"></script>
+    <script src="js/vendor/bable.min.js"></script>
+    <script type="text/babel">
+        const { Fragment, useState } = React;
+        const App = () => { //UI를 컴퍼넌트로 정의
+            // const [변수명, setXxx] = useState(초기값)
+            const [p1text, setP1text] = useState('Just React');
+            const [p2text, setP2text] = useState('2022');
+
+            const changeContent = () => {
+                setP1text('Welcome to react World!!');
+                setP2text('since 2013');
+            };
+
+            return( // UI 리턴시 하나의 요소만 가능!! (하나로 묶어줌)
+                <Fragment>
+                <p id="p1" className="POne"> {p1text}</p>
+                <p id="p2" className="PTwo"> {p2text}</p>
+                <button onClick={changeContent}>Change Content</button>
+                </Fragment>
+            );
+        };
+        ReactDOM.render(<App />, // 위에서 정의한 컴퍼넌트 호출
+                        document.getElementById('app'));
+    </script>
+</body>
+</html>
