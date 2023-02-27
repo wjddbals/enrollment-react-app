@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>React.createElement</title>
+  <style>
+    .root2 {color: orange;}
+    #root3 {color: red; font-style: italic;}
+  </style>
+</head>
+<body>
+<div id="root1"></div>
+<div id="root2"></div>
+<div id="root3"></div>
+<div id="root4"></div>
+<div id="root5"></div>
+
+<script src="js/vendor/react/react@16.14.dev.js"></script>
+<script src="js/vendor/react/react-dom@16.14.dev.js"></script>
+
+<script>
+  // createElement(요소, 속성, 내용, 자식요소)
+  // render(대상요소, DOM요소)
+
+  ReactDOM.render(
+          // <h1 Hello, World!!</h1>>
+          React.createElement('h1', null, 'Hello World!!'),
+          document.querySelector('#root1') );
+
+  ReactDOM.render(
+          // <h1 class='root2'> Hello, World!!</h1>>
+          React.createElement('h1', {className:'root2'}, 'Hello World!!'),
+          document.querySelector('#root2') );
+
+  ReactDOM.render(
+          // <h2 id='root3'><span> Hello</span>, World!!</h1>
+          React.createElement('h2', {id:'root3'},
+                  React.createElement('span', null, 'Hello'), ', World!!'),
+          document.querySelector('#root3') );
+
+  ReactDOM.render(
+          // <h2 id='root3'><span> Hello</span>, <em>Wonderfull</>em>World!!</h1>
+          React.createElement('h2', null,
+                  React.createElement('span', null, 'Hello',
+                     React.createElement('em', null, 'Wonderfull'), ),
+                  ',  World!!'),
+          document.querySelector('#root4') );
+
+  ReactDOM.render(
+          // <h3 class='abc' style = 'text-align: center'
+          // onclick='alert('Hello, Again~!!')'>
+          // Hellp, Another World!!</h3>
+          React.createElement('h3',
+                  {className:'abc', style: {textAline:'center'},
+                    onClick:()=>{alert('Hello, again~!!'); } },
+                  'Hellp, Another World!!'),
+          document.querySelector('#root5') );
+</script>
+</body>
+</html>
