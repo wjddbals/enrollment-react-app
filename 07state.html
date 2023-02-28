@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>React State</title>
+  <style>
+      .red {color: red}
+      .green {color: green}
+      .blue {color: blue}
+  </style>
+</head>
+<body>
+<div id="root1"></div>
+<div id="root2"></div>
+<div id="root3"></div>
+<div id="root4"></div>
+<div id="root5"></div>
+<div id="root6"></div>
+<div id="root7"></div>
+
+<script src="js/vendor/react/react@16.14.dev.js"></script>
+<script src="js/vendor/react/react-dom@16.14.dev.js"></script>
+<script src="js/vendor/bable.min.js"></script>
+
+<script type="text/babel">
+    // State
+    // 컴퍼넌트의 상태를 나타내는 변수
+    // 즉, 컴퍼넌트 내에서 상황에 따른 변경이 발생하는 값을 관리하기 위해 사용
+    // state의 값이 변경되는 경우 react가 그 부분만 자동으로 재렌더링 함
+
+    const { useState, Fragment } = React;
+    const Counter = () => {
+        const [count, setCount] = useState(0); //초기값 0
+    //<Fragment> 랑 <> 은 같은뜻
+      return (
+          <>
+          <p> count : {count}</p>
+          <div><button type='button'
+                       onClick={()=>setCount(count+1)}>증가</button></div>
+          </>
+      );
+    }
+
+    // -------------------------
+
+    ReactDOM.render(<Counter />,document.querySelector('#root1') );
+
+
+
+</script>
+</body>
+</html>
