@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>React props</title>
+  <style>
+      .red {color: red}
+      .green {color: green}
+      .blue {color: blue}
+  </style>
+</head>
+<body>
+<div id="root1"></div>
+<div id="root2"></div>
+<div id="root3"></div>
+<div id="root4"></div>
+<div id="root5"></div>
+<div id="root6"></div>
+<div id="root7"></div>
+
+<script src="js/vendor/react/react@16.14.dev.js"></script>
+<script src="js/vendor/react/react-dom@16.14.dev.js"></script>
+<script src="js/vendor/bable.min.js"></script>
+
+<script type="text/babel">
+    // props
+    // 외부에서 컴퍼넌트 내부에 전달하는 인수 argument
+    // 전달하는 인수는 변수명 자체로 사용할 수 있고
+    // 인수가 여러 개인 경우 props 하나로 받을 수도 있음
+    // props를 컴퍼넌트 내부에서 출력할 때는  {prop이름} 형태로 사용
+    // 만일, 기본 속성을 정의하려면 defaultProps 를 이용
+
+    const Hello1 = ({name}) => {
+        return <h1> Hello, {name}!!</h1>;
+    };
+
+    const Hello2 = ({name, color}) => {
+        return <h1 className= {color}> Hello, {name}!!</h1>;
+    };
+
+    //[a, b, c] = obj
+    const Hello3 = (props) => {
+        return <h1 className= {props.color}
+                   style={{ fontStyle: props.style }}> Hello, {props.name}!!</h1>;
+    };
+
+    Hello3.defaultProps = { //기본 prop 정의
+        name : 'React Props',
+        color : 'red',
+        style : 'italic'
+    };
+
+
+    // -------------------------
+
+    ReactDOM.render(<Hello1 name='World' />,document.querySelector('#root1') );
+    ReactDOM.render(<Hello1 name='React' />,document.querySelector('#root2') );
+
+    ReactDOM.render(<Hello2 name='React' color='red' />,document.querySelector('#root3') );
+    ReactDOM.render(<Hello2 name={<em>React</em>} color='blue' />,document.querySelector('#root4') );
+
+    ReactDOM.render(<Hello3 name='Express' color='green' style="italic" />,
+                    document.querySelector('#root5') );
+
+    //ReactDOM.render(<Hello3 />, document.querySelector('#root6') );
+    //ReactDOM.render(<Hello3  color='blue'/>, document.querySelector('#root6') );
+    ReactDOM.render(<Hello3  name='SpringBoot' style='normal'/>, document.querySelector('#root6') );
+
+
+</script>
+</body>
+</html>
