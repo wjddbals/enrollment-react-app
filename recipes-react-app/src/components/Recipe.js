@@ -2,13 +2,11 @@ import React from "react";
 import IngredientsList from "./IngredientsList";
 import Ingredient from "./Ingredient";
 import Instructions from "./Instructions";
-import Logo from "../../public/images/smile.png";
 
 const Recipe = ({ name, ingredients, steps }) => {
-    let fname = name.toLocaleLowerCase().replace(/ /g,'-');
+    let fname = name.toLocaleLowerCase().replace(/ /g,'-')
     return (
         <React.StrictMode>
-            <div><img src={Logo}/></div>
             <section id={fname}>
             <h1>{name}</h1>
             <div><img src={`./images/${fname}.png`} /></div>
