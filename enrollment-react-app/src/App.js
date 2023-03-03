@@ -1,16 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
+import EnrollmentForm from "./components/EnrollmentForm";
 
+//EnrollmentForm이라는 폼을 리턴하도록
+//정의된 앱 컴퍼넌트
 const App=()=>{
-    const ClickHandler=()=> {
-        alert('Starting React');
-
+    const [program,setProgram]=useState("US");
+    const handleChange = (e) => {
+        setProgram(e.target.value);
     };
-
     return (
-        <div>
-            <button type='button' onClick={ClickHandler}>Click React</button>
+        <div className="App">
+            <div className="programs">
+                <label>프로그램 종류:</label>
+                <select className="appDropDowns"
+                onChange={handleChange} value={program}>
+                    <option value="UG">학사과정(대학생)</option>
+                    <option value="PG">석사과정(대학원생)</option>
+                </select>
+            </div>
+            <EnrollmentForm chosenProgram={program} />
         </div>
+
     );
 };
 
+//컴퍼넌트나 모듈형태로 작성하는 경우
+//기본적으로 내보내기할 함수명 지정
 export default App;
