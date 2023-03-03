@@ -8,14 +8,14 @@ const EnrollmentForm=(props)=>{
     const [firstName,setFirstName,] =useState("");
     const [lastName,setLastName] =useState("");
     const [email,setEmail] =useState("");
-    //state형 변수에 저장된 이름성을 환영메세시지 출력하기 위해 선언
+    //state형 변수에 저장된 이름/성을 환영메세시지 출력하기 위해 선언
     const [welcomeMessage,setWelcomeMessage] =useState("");
     const [msgStyle,setMsgStyle]=useState("redOne");
 
     //등록하기 번튼을 클릭시 이름성을 환영메시지로 만들어
     //폼 아래쪽에 나타냄
     const handleSubmit = (e) => {
-        let msg ='참가못해요';
+        let msg ='더이상 참가못해요';
         setMsgStyle('redOne');
         if(props.currentSeat-1 >=0){
             //props로 전달받ㅌ은 함수 setUpdateSeats를 이용해서 상위 컴퍼넌트의 seats 변수값을 조작함
@@ -23,6 +23,16 @@ const EnrollmentForm=(props)=>{
             setMsgStyle('message');
             msg =`환영합니다,${firstName}${lastName}님!`+
             `${email}로 등록관련 정보를 발송해드렸습니다`;
+            //등록완료된 학생정보에 사용할 key 생성
+            const rndKey =Math.floor(1000+Math.random() *9000);
+            //생성한 키와 등록완료된 학생정보를 props에 저장
+            let stud={
+                key: rndKey,fname: firstName, lname:lastName,
+                program:props.chosenProgram, email:email
+            }
+
+            props.setstudDetails(stud);
+
         }
         setWelcomeMessage(msg) ;
        e.preventDefault(); //submit 기능 전파 중지
@@ -36,7 +46,7 @@ const EnrollmentForm=(props)=>{
     return(
         <div>
             <div className= "enrolContainer">
-            <form className="enrolForm" onSubmit={handleSubmit}>
+            <form className="enrolForm">
 
             <ul className="ulEnrol">
                 <li>
