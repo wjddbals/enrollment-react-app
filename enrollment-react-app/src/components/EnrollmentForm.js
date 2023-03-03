@@ -21,7 +21,7 @@ const EnrollmentForm=(props)=>{
             //props로 전달받ㅌ은 함수 setUpdateSeats를 이용해서 상위 컴퍼넌트의 seats 변수값을 조작함
        props.setUpdateSeats(props.currentSeat-1);//참여가능 인원수 감소
             setMsgStyle('message');
-            msg =`환영합니다,${firstName}${lastName}님!`+
+            msg =`환영합니다,${firstName}${lastName}님!\n`+
             `${email}로 등록관련 정보를 발송해드렸습니다`;
             //등록완료된 학생정보에 사용할 key 생성
             const rndKey =Math.floor(1000+Math.random() *9000);
