@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import EnrollmentForm from "./components/EnrollmentForm";
-
+import EnrolList from "./components/EnrolList";
 //EnrollmentForm이라는 폼을 리턴하도록
+
+
 //정의된 앱 컴퍼넌트
 const App=()=>{
     const [program,setProgram]=useState("US");//프로그램 종류
@@ -39,6 +41,7 @@ const App=()=>{
             <EnrollmentForm chosenProgram={program}
             currentSeat={(program==='UG') ? ugseats :pgseats}
                             setUpdateSeats={setUpdateSeats}/>
+            <EnrolList />
         </div>
 
     );
