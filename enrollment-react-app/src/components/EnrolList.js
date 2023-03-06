@@ -2,8 +2,16 @@ import React from 'react';
 import '../EnrolList.css';
 import {DetailsList} from '@fluentui/react/lib/DetailsList';
 import {useEffect} from 'react';
-//과정등록 학생리스트컬럼 정의
-const colums=[
+//과정등록 학생리스트컬럼 정의(이름성 과정종류 이메일)
+//련재컬럼 앞뒤로 수정 삭제버튼 추가
+const columns=[
+    {
+        key: 'edit',
+        name: "수정",
+        fieldName: "edit",
+        minWidth: 50,
+        isResizable: false
+    },
     {
         key:'fname',name:'First Name',fieldName:'fname',
         minWidth:90,isResizable:false
@@ -27,8 +35,15 @@ const colums=[
         key:'email',name:'이메일',fieldName:'email',
         minWidth:90,isResizable:false
     },
-
+    {
+        key: 'delete',
+        name: "삭제",
+        fieldName: "delete",
+        minWidth: 50,
+        isResizable: false
+    }
 ];
+
 
 //테스트용 데이터 삽입-컬럼 정의시 사용햇던 fieldName 으로 값초기화
 let items=[];
@@ -48,7 +63,7 @@ const EnrolList =(props) =>{
 
     return(
         <div className="enrolList">
-            <DetailsList items={items}columns={colums} />
+            <DetailsList items={items}columns={columns} />
         </div>
     );
 
