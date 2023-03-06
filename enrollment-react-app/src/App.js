@@ -11,8 +11,13 @@ const App=()=>{
     const [ugseats,setUgSeats]=useState(60);
     const [pgseats,setPgSeats]=useState(40);
 
+
     //과정등록한 학생 정보를 저자하는 변수 선언
     const [studDetails,setStudDetails]=useState({});
+    const [action,setAction]=useState();//작업종류지정
+    const [selItemKey,setSelItemKey]=useState(); //등록정보키
+
+
 
     const handleChange = (e) => {
         setProgram(e.target.value);
@@ -27,6 +32,12 @@ const App=()=>{
 
 
     };
+
+    //작업종류 키 설정 함수
+    const handleItemSelection= (action,key)=> {
+        setAction(action);
+        setSelItemKey(key);
+    }
     return (
         <div className="App">
             <div className="programs">
@@ -44,9 +55,13 @@ const App=()=>{
             <EnrollmentForm chosenProgram={program}
             currentSeat={(program==='UG') ? ugseats :pgseats}
                             setUpdateSeats={setUpdateSeats}
-                            setstudDetails={setStudDetails} />
+                            setstudDetails={setStudDetails}
+            handleItemSelection={handleItemSelection}/>
+
             <EnrolList studDetails={studDetails}
-                       setStudDetails={setStudDetails}/>
+                       setStudDetails={setStudDetails}
+                       selectedItemKey={selItemKey}
+            action={action}/>
         </div>
 
     );
