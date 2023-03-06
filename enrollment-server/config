@@ -1,0 +1,35 @@
+src/index.js 를 참고해서 server/index.js 를 수정
+=> reactDOM.render -> reactDOMServer.renderToString
+
+npm run build
+
+npm install --save-dev react-icons
+npm install --save-dev @fluentui/react
+
+npm install --save-dev @babel/core @babel/preset-env babel-loader nodemon
+npm install --save-dev webpack webpack-cli webpack-node-externals
+
+"dev:build-server": "webpack --config webpack-server.js --mode=development",
+"dev:start": "nodemon ./build-server/index.js"
+
+npm run dev:build-server
+
+> css 관련 오류 발생!
+npm install isomorphic-style-loader css-loader --save-dev
+
+{
+    test:/\.css$/,
+    use:[ 'isomorphic-style-loader', {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+        }, 'postcss-loader' ]
+},
+
+
+npm run dev:start
+
+> Cannot read properties of undefined (reading 'createElement') 오류~
+
+> import { React, useState } from 'react';
+> => import React, { useState } from 'react';
+
