@@ -17,10 +17,20 @@ const App=()=>{
     const [action,setAction]=useState();//작업종류지정
     const [selItemKey,setSelItemKey]=useState(); //등록정보키
 
-
+    //라디오 버튼 체크 상태 처리,초기값은 true로 설정
+    const [isUGChecked,setIsUGChecked]=useState(true);
+    //수정이나 삭제시참가가능 인원수 조정 필요 여부 설정, 초기값은 false로 설정
+    const [isRestoreSeats,setIsRestoreSeats]=useState(false);
 
     const handleChange = (e) => {
         setProgram(e.target.value);
+        //참가프로그램이 혹시라도 변경됐다면
+        setIsUGChecked(!isUGChecked);
+        if(isRestoreSeats){
+            e.target.value==='UG'? //변경전  프로그램 인원수를 원래대로 복원
+                setPgSeats(pgseats +1): setUgSeats(ugseats +1);
+            setIsRestoreSeats(false);
+        };
     };
 
     //참가가능 인원수를 변경하는 함수/
@@ -46,7 +56,14 @@ const App=()=>{
         setAction('');
 
     };
+        //수정시 참가 프로그램 변경시 인원수 재수정
+    const setReSelectProgram=(selProgram)=>{
+        selProgram==='UG'?setIsUGChecked(true):setIsUGChecked(false);
+        selProgram(selProgram);
+        setIsRestoreSeats(true);
+    };
 
+    let setReSelectProgam;
     return (
         <div className="App">
             <div className="programs">
@@ -54,8 +71,10 @@ const App=()=>{
                 <ul className="ulEnrol">
                     <li onChange={handleChange} className="parentLabels">
                         <input type="radio" value="UG" name="programGroup"
-                        defaultChecked />학사과정
-                        <input type="radio" value="PG" name="programGroup" />석사과정
+                        defaultChecked ={isUGChecked}/>학사과정
+                        <input type="radio" value="PG"
+                               name="programGroup"
+                        defaultChecked={!isUGChecked}/>석사과정
                     </li>
                     <li> {program}참가 가능 인원:
                         {(program ==='UG') ? ugseats:pgseats } </li>
@@ -65,7 +84,8 @@ const App=()=>{
             currentSeat={(program==='UG') ? ugseats :pgseats}
                             setUpdateSeats={setUpdateSeats}
                             setstudDetails={setStudDetails}
-            handleItemSelection={handleItemSelection}/>
+            handleItemSelection={handleItemSelection}
+            setReSelectProgam={setReSelectProgam}/>
 
             <EnrolList studDetails={studDetails}
                        setStudDetails={setStudDetails}
