@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f82de000-8702-407f-8639-5a9b12500740" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../Javascript.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../enrollment-react-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../enrollment-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontand 형준자료/프론트앤드 형준자료/.idea/web3comp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project01-1-express.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-router-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-router-app/src/components/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-router-app/src/components/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-router-app/src/components/pages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/react-spa-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/components/Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/components/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/pages/BookDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/pages/Contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/pages/NOpath.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-spa-app/src/pages/Stuff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recipes-app/recipes-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recipes-react-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recipes-react-app/recipes-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../recipes-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiPojectV1-express/semiPojectV1-express.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiPojectV1-express/static/js/semiproject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/dbconfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/helpers/handlebars-helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/models/Board.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/models/Member.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/models/Oracle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/models/Zipcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/public/join.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/public/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/public/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/public/myinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/public/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/public/public/write.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/routes/board.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/routes/member.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/routes/zipcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/routes/zipcode2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/semiProjectv2-react-SPA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/components/Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/components/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/components/laylout/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/components/laylout/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/pages/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/pages/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/pages/Myinfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/pages/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/pages/join.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/src/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/css/project2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/img/hoteak.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/js/join.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/js/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/js/view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/js/write.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/static/js/zipcode2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/board/list.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/board/update.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/board/view.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/board/write.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/join.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/layouts/layout.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/login.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/myinfo.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/partials/footer.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/partials/header.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/zipcode.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiProjectv2-react-SPA/views/zipcode2.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/project2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Join.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/MyInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../semiproject/semiproject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../enrollment-server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../enrollment-server/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Mg7Uuf6mboOf5d0FH30XJgkn60" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/FULLSTACK/Documents/semiProjectv2-react-SPA1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FULLSTACK\Documents\semiProjectv2-react-SPA1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="f82de000-8702-407f-8639-5a9b12500740" name="변경" comment="" />
+      <created>1678177393009</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678177393009</updated>
+      <workItem from="1678177394160" duration="359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
