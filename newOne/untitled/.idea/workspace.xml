@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5613c747-787a-4194-a943-564ca8327764" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../../hello-next-app2/.idea/hello-next-app2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hello-next-app2/pages/board/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hello-next-app2/pages/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hello-next-app2/pages/products/[name].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hello-next-app2/pages/products/[name]/[cpu].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../semiProjectv2-react-SPA1/semiProjectv2-react-SPA1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled3/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled3/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../untitled3/untitled3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/helpers/handlebars-helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/models/Board.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/models/Member.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/models/Oracle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/models/Zipcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/public/join.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/public/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/public/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/public/myinfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/public/view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/public/public/write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/routes/board.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/routes/member.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/routes/zipcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/routes/zipcode2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/semiProjectv2-react-SPA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/components/Content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/components/Menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/components/laylout/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/components/laylout/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/pages/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/pages/List.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/pages/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/pages/Myinfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/pages/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/pages/join.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/src/pages/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/css/project2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/img/hoteak.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/js/join.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/js/update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/js/view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/js/write.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/static/js/zipcode2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/board/list.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/board/update.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/board/view.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/board/write.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/index.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/join.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/layouts/layout.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/login.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/myinfo.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/partials/footer.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/partials/header.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/zipcode.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA/views/zipcode2.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../semiProjectv2-react-SPA1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../semiProjectv2-react-SPA1/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2MibboW9iWho3D4NeYJ3quB7sZd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/yuminhub",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="5613c747-787a-4194-a943-564ca8327764" name="변경" comment="" />
+      <created>1678253424820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678253424820</updated>
+      <workItem from="1678253426078" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
