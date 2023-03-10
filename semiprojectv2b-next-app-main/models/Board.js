@@ -1,4 +1,4 @@
-import maradb from './MariadDB';
+import mariadb from './MariaDB';
 const ppg = 25;
 
 let boardsql = {
@@ -10,18 +10,18 @@ let boardsql = {
     select1: ' select bno, title, userid, date_format(regdate, "%Y-%m-%d") regdate, ' +
         ' views from board ',
 
-    select2: ` order by bno desc limit 0 ?, 25`,
+    select2: ` order by bno desc limit  ?, 25 `,
 
     selectOne: ' select * from board where  bno=? ',
 
-    selectCount: 'select count(bno) cnt from board',
+    selectCount: 'select count(bno) cnt from board ',
 
-    viewOne: ' update board set views = views + 1 where bno = ?',
+    viewOne: ' update board set views = views + 1 where bno = ? ',
 
     update: ' update board set title = :1, contents = ?, ' +
         ' regdate = current_timestamp where bno = ?',
 
-    delete: ' delete from board where bno =?',
+    delete: ' delete from board where bno =? ',
 }
 
 // 동적쿼리 생성 함수
@@ -49,14 +49,14 @@ class Board {
         let insertcnt = 0;
 
         try {
-            conn = await oracledb.makeConn();  // 연결
-            let result = await conn.execute(boardsql.insert, params); // 실행
+            conn = await mariadb.makeConn();  // 연결
+            let result = await conn.query(boardsql.insert, params); // 실행
             await conn.commit();  // 확인
             if (result.rowsAffected > 0) insertcnt = result.rowsAffected;
         } catch (e) {
             console.log(e);
         } finally {
-            await oracledb.closeConn(); // 종료
+            await mariadb.closeConn(); // 종료
         }
 
         return insertcnt;
@@ -65,33 +65,26 @@ class Board {
     async select(stnum, ftype, fkey) {  // 게시판 목록 출력
         let conn = null;
         let params = [stnum, stnum + ppg];
-        let bds = [];   // 결과 저장용
-        let allcnt = -1;
+        let [allcnt,idx]=[-1,-1];
         let where = '';
+        let rowData ='';// 결과 저장용
 
         if (fkey !== undefined) where = makeWhere(ftype, fkey);
 
         try {
-            conn = await oracledb.makeConn();
+            conn = await mariadb.makeConn();
             allcnt  = await this.selectCount(conn, where);  // 총 게시글수 계산
-            let idx = allcnt - stnum + 1;
+            idx = allcnt - stnum + 1;
 
-            let result = await conn.execute(
-                boardsql.paging1 + where + boardsql.paging2, params, oracledb.options);
-            let rs = result.resultSet;
-            let row = null;
-            while((row = await rs.getRow())) {
-                let bd = new Board(row.BNO, row.TITLE,
-                    row.USERID, row.REGDATE, null, row.VIEWS);
-                bd.idx = idx--;   // 글번호 컬럼
-                bds.push(bd);
-            }
+             rowData = await conn.query(
+                boardsql.select1 + where + boardsql.select2, params);
+
         } catch (e) {
             console.log(e);
         } finally {
-            await oracledb.closeConn();
+            await mariadb.closeConn();
         }
-        let result = {'bds': bds, 'allcnt': allcnt}
+        let result = {'boards': rowData, 'allcnt': allcnt,'idx':idx};
 
         return result;
     }
@@ -101,16 +94,14 @@ class Board {
         let cnt = -1;   // 결과 저장용
 
         try {
-            let result = await conn.execute(
-                boardsql.selectCount + where, params, oracledb.options);
-            let rs = result.resultSet;
-            let row = null;
-            if ((row = await rs.getRow())) cnt = row.CNT;
+            cnt = await conn.query(
+                boardsql.selectCount + where, params);
+
         } catch (e) {
             console.log(e);
         }
 
-        return cnt;
+        return parseInt(cnt[0].cnt);
     }
 
     async selectOne(bno) {  // 본문조회
@@ -119,9 +110,9 @@ class Board {
         let bds = [];
 
         try {
-            conn = await oracledb.makeConn();
-            let result = await conn.execute(
-                boardsql.selectOne, params, oracledb.options);
+            conn = await mariadb.makeConn();
+            let result = await conn.query(
+                boardsql.selectOne, params, mariadb.options);
             let rs = result.resultSet;
 
             let row = null;
@@ -131,13 +122,13 @@ class Board {
                 bds.push(bd);
             }
 
-            await conn.execute(boardsql.viewOne, params);
+            await conn.query(boardsql.viewOne, params);
             await conn.commit();
 
         } catch (e) {
             console.log(e);
         } finally {
-            await oracledb.closeConn();
+            await mariadb.closeConn();
         }
 
         return bds;
@@ -149,14 +140,14 @@ class Board {
         let updatecnt = 0;
 
         try {
-            conn = await oracledb.makeConn();
-            let result = await conn.execute(boardsql.update, params);
+            conn = await mariadb.makeConn();
+            let result = await conn.query(boardsql.update, params);
             await conn.commit();
             if (result.rowsAffected > 0) updatecnt = result.rowsAffected;
         } catch (e) {
             console.log(e);
         } finally {
-            await oracledb.closeConn();
+            await mariadb.closeConn();
         }
 
         return updatecnt;
@@ -168,14 +159,14 @@ class Board {
         let deletecnt = 0;
 
         try {
-            conn = await oracledb.makeConn();
-            let result = await conn.execute(boardsql.delete, params);
+            conn = await mariadb.makeConn();
+            let result = await conn.query(boardsql.delete, params);
             await conn.commit();
             if (result.rowsAffected > 0) deletecnt = result.rowsAffected;
         } catch (e) {
             console.log(e);
         } finally {
-            await oracledb.closeConn();
+            await mariadb.closeConn();
         }
 
         return deletecnt;

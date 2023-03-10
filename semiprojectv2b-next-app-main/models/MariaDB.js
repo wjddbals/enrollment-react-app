@@ -1,6 +1,5 @@
 import mariadb from "mariadb";
 
-const mariadb = require('mariadb');
 const dbconfig = {
     host: process.env.MARIADB_HOST,
     user: process.env.MARIADB_USER,
@@ -14,7 +13,7 @@ const MariaDB = {
 
     makeConn: async () => {
         try {
-            return await maradb.createConnection(dbconfig);
+            return await mariadb.createConnection(dbconfig);
         } catch (e) { console.log(e); }
     },
 
