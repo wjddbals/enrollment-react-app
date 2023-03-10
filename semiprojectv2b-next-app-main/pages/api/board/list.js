@@ -8,7 +8,6 @@ export default async (req, res) => {
 
     try {
 
-
         const rowData = new Board().select(stnum, ftype, fkey)
             .then((result) => result);
         res.status(200).json(await rowData);
