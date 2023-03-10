@@ -14,7 +14,7 @@ let boardsql = {
 
     selectOne: ' select * from board where  bno=? ',
 
-    selectCount: 'select count(bno) cnt from board ',
+    selectCount: ' select count(bno) cnt from board ',
 
     viewOne: ' update board set views = views + 1 where bno = ? ',
 
