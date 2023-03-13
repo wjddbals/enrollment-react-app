@@ -20,7 +20,7 @@ export default function View({board}) {
 
     const deleteOne = () => {
         if (confirm('정말로 삭제'))
-            location.href=`/board/delete?bno=${board.bno}`;
+            location.href=`/api/board/delete?bno=${board.bno}`;
     };
     return (
     <main>
