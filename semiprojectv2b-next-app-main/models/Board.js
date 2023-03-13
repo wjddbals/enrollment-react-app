@@ -40,6 +40,10 @@ class Board {
         this.contents = contents;
         this.views = views;
     }
+    static newOne(title,userid,contents){
+    return new Board(null,title,userid,null,contents,null).insert();
+    }
+
 
     async insert() {  // 새글쓰기
         let conn = null;
@@ -50,7 +54,7 @@ class Board {
             conn = await mariadb.makeConn();  // 연결
             let result = await conn.query(boardsql.insert, params); // 실행
             await conn.commit();  // 확인
-            if (result.rowsAffected > 0) insertcnt = result.rowsAffected;
+            if (result.affectedRows > 0) insertcnt = result.affectedRows;  //마리아디비는 affectdrows 오라클 은
         } catch (e) {
             console.log(e);
         } finally {

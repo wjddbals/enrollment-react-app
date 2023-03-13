@@ -64,3 +64,6 @@ input[type="text"] { padding: 5px }
 
 .logo { padding: 50px 110px ; width: 75% }
 
+/* recaptcha */
+.cap {display: inline-flex;padding: 0; marigin:-15px 0 0 -10px;
+}
