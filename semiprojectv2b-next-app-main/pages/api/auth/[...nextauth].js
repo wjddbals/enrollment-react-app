@@ -8,6 +8,7 @@ export default NextAuth({
     providers: [
         Credentials({
 
+            id: "userid-passwd-credentials",
             name: "userid-passwd-credentials",
 
             credentials: {
@@ -27,6 +28,9 @@ export default NextAuth({
 
         })
     ],
+    pages:{ //인증에 사용자 정의 로그인 페이지 사용
+        signIn:'/member/login'
+    },
     callbacks:{
         async jwt(token,user,account,profile,isNewUser) {
             console.log('jwt - ',user);

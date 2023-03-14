@@ -1,4 +1,5 @@
 import axios from "axios";
+import {signOut, signout, useSession} from "next-auth/client";
 
 
 export async function getServerSideProps(ctx){
@@ -13,6 +14,8 @@ export async function getServerSideProps(ctx){
     return {props:{member}}
 }
 export default function MyInfo({member}) {
+    const [session, loading] =useSession();
+    console.log ('myinfo -',session?.user?.userid);
   return (
       <main>
           <h2>회원정보</h2>
@@ -36,6 +39,11 @@ export default function MyInfo({member}) {
               </tr>
               </tbody>
           </table>
+
+          {
+              session?
+              <button onClick={()=>signOut()}>로그아웃하기</button>:''
+          }
       </main>
   )
 }
