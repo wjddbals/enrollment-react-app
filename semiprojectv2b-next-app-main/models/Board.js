@@ -40,10 +40,14 @@ class Board {
         this.contents = contents;
         this.views = views;
     }
-    static newOne(title,userid,contents){
-    return new Board(null,title,userid,null,contents,null).insert();
+
+    static newOne(title, userid, contents) {
+        return new Board(null,title,userid,null,contents,null);
     }
 
+    static modifyOne(bno, title, contents) {
+        return new Board(bno,title,null,null,contents,null);
+    }
 
     async insert() {  // 새글쓰기
         let conn = null;
@@ -54,7 +58,7 @@ class Board {
             conn = await mariadb.makeConn();  // 연결
             let result = await conn.query(boardsql.insert, params); // 실행
             await conn.commit();  // 확인
-            if (result.affectedRows > 0) insertcnt = result.affectedRows;  //마리아디비는 affectdrows 오라클 은
+            if (result.affectedRows > 0) insertcnt = result.affectedRows;
         } catch (e) {
             console.log(e);
         } finally {
@@ -133,13 +137,14 @@ class Board {
             conn = await mariadb.makeConn();
             let result = await conn.query(boardsql.update, params);
             await conn.commit();
-            if (result.rowsAffected > 0) updatecnt = result.rowsAffected;
+            if (result.affectedRows > 0) updatecnt = result.affectedRows;
         } catch (e) {
             console.log(e);
         } finally {
             await mariadb.closeConn();
         }
 
+        console.log('update - ',updatecnt);
         return updatecnt;
     }
 
@@ -152,7 +157,7 @@ class Board {
             conn = await mariadb.makeConn();
             let result = await conn.query(boardsql.delete, params);
             await conn.commit();
-            if (result.rowsAffected > 0) deletecnt = result.rowsAffected;
+            if (result.affectedRows > 0) deletecnt = result.affectedRows;
         } catch (e) {
             console.log(e);
         } finally {

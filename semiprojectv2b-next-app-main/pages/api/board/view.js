@@ -1,5 +1,6 @@
 import Board from "/models/Board";
 
+
 export default async (req, res) => {
     let bno = req.query.bno;
 

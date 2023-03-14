@@ -12,7 +12,6 @@ const Layout = ({children}) => {
                     <link rel="stylesheet" href="/css/normalize.css" />
                     <link rel="stylesheet" href="/css/main.css" />
                     <link rel="stylesheet" href="/css/project2.css" />
-
                     <title>index</title>
                 </head>
                 <body>

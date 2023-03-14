@@ -76,8 +76,9 @@ export default function List( {boards} ) {
     };
 
     const handlewrite = () => {
-        location.href ='/board/write';
+        location.href = '/board/write';
     };
+
     return (
       <main>
           <h2>게시판</h2>
@@ -100,7 +101,7 @@ export default function List( {boards} ) {
                     <input type="text" name="fkey" id="fkey" onChange={handlekey} />
                     <button type="button" id="findbtn" onClick={handlefind}>검색하기</button>
                 </td>
-                <td colspan="2" className="alignrgt">
+                <td colSpan="2" className="alignrgt">
                     <button type="button" id="newbtn" onClick={handlewrite}>새글쓰기</button></td>
                 </tr>
               <tr>
