@@ -8,25 +8,40 @@ export default NextAuth({
     providers: [
         Credentials({
 
-            name: "email-passwd-credentials",
+            name: "userid-passwd-credentials",
 
             credentials: {
-                email: { label: "이메일", type: "email" },
+                userid: { label: "아이디", type: "text" },
                 password: { label: "비밀번호", type: "password" }
             }, //로그인 폼 정의
             async authorize(credentials, req) {
                 //입력한 인증 정보 가져옴
-                const email =credentials.email;
-                const passwd =credentials.passwd;
+                const userid =credentials.userid;
+                const password =credentials.password;
 
                 //console.log('auth login - ',credentials);
-                if(email ==='123@avb.co.kr' && passwd ==='1') {
+                if(userid ==='abc123' && password ==='888hhh') {
                     return credentials;
                 }
             }
 
         })
-    ]
+    ],
+    callbacks:{
+        async jwt(token,user,account,profile,isNewUser) {
+            console.log('jwt - ',user);
+            if(user?.userid) token.userid =user.userid;
+
+            return token;
+        },
+
+        async session(session,userOrToken) {
+            console.log('session - ',userOrToken);
+            session.user.userid =userOrToken.userid;
+
+            return session;
+        }
+    }
 
 });
 
