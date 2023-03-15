@@ -50,10 +50,7 @@ export default function MyInfo({member,session}) {
               </tbody>
           </table>
 
-          {
-              session?
-              <button onClick={()=>signOut()}>로그아웃하기</button>:''
-          }
+
       </main>
   )
 }

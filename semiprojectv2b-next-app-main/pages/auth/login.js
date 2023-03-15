@@ -2,7 +2,7 @@
 
 //경로 : /pages/auth/login.js
 
-import {signIn, signin, signOut, useSession} from "next-auth/client";
+import {signIn, signOut, useSession} from "next-auth/client";
 
 const Login =()=>{
     const [session,loading] =useSession();
