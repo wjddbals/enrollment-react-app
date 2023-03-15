@@ -1,7 +1,19 @@
 import {check_captcha, handleInput, hashPassword, process_submit} from "../../models/Utils";
 import {useState} from "react";
+import {getSession} from "next-auth/client";
 
 
+export async function getServerSideProps(ctx) {
+    //세션 객체 가져오기
+    const sess = await getSession(ctx);
+    if (sess) { // 로그인 한 경우 마이인포로으로 회원정보로 이동
+        return {
+            redirect: {permanent: false, destination: '/member/myinfo'},
+            props: {}
+        }
+    }
+    return {props:{}}
+}
 export default function Join() {
 
     const [userid, setUserid] = useState('');

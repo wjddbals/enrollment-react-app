@@ -1,10 +1,13 @@
 import {handleInput, process_submit} from "../../models/Utils";
 import axios from "axios";
 import {useState} from "react";
-import {signIn} from "next-auth/client";
+import {signIn, useSession} from "next-auth/client";
 
 
 export default function Login() {
+
+    const [session, loading] =useSession();
+    console.log ('login -',session?.user?.userid);
 
     const [userid, setUserid] = useState('');
     const [passwd, setPasswd,] = useState('');
@@ -32,7 +35,7 @@ export default function Login() {
                   <input type="text"  id="uid"
                          onChange={e => handleInput(setUserid, e)}/></div>
               <div><label htmlFor="pwd">비밀번호</label>
-                  <input type="password" name="pwd" id="pwd"
+                  <input type="password"  id="pwd"
                          onChange={e => handleInput(setPasswd, e)}/></div>
               <div><label></label>
                   <button type="button" onClick={handlelogin}>로그인</button>
