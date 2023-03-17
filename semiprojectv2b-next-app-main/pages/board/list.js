@@ -2,7 +2,8 @@ import {useState} from "react";
 import fetch from 'isomorphic-unfetch';
 import axios from 'axios';
 import Link from "next/link";
-
+import Layout from "../../components/layout/Layout";
+import Login from "../member/login";
 const getStpgns = (cpg, alpg) => {
     let stpgns = [];
     let stpgn = parseInt((cpg - 1) / 10) * 10 + 1; // 페이지네이션 시작값 계산
@@ -147,3 +148,9 @@ export default function List( {boards} ) {
       </main>
   )
 }
+
+List.getLayout = (page) => (
+    <Layout meta={{title: '게시판 리스트'}}>
+        {page}
+    </Layout>
+);

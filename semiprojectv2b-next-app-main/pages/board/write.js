@@ -1,7 +1,8 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import axios from "axios";
-import { check_captcha, handleInput, process_submit } from '../../models/Utils'
-
+import { check_captcha, handleInput, process_submit } from '../../components/Utils'
+import Layout from "../../components/layout/Layout";
+import List from "./list";
 export default function Write() {
 
     const [title, setTitle] = useState('');
@@ -39,7 +40,7 @@ export default function Write() {
                               rows="7" cols="55"></textarea></div>
 
                     <div><label></label>
-                        <div className="g-recaptcha cap" data-sitekey="6LdC4OskAAAAACUPLtU0oBNsB0nBRc4HAZXp0I9i"></div>
+                        <div className="g-recaptcha cap" data-sitekey={process.env.SITE_KEY}></div>
                     </div>
 
                     <div><label></label>
@@ -52,3 +53,9 @@ export default function Write() {
     );
 
 }
+
+Write.getLayout = (page) => (
+    <Layout meta={{title: '게시판 새글쓰기'}}>
+        {page}
+    </Layout>
+);

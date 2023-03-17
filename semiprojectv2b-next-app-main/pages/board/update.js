@@ -1,6 +1,8 @@
 import {useState} from "react";
 import axios from "axios";
-import { check_captcha, process_submit, handleInput } from "../../models/Utils";
+import { check_captcha, process_submit, handleInput } from "../../components/Utils";
+import Layout from "../../components/layout/Layout";
+import List from "./list";
 
 export async function getServerSideProps(ctx) {
     let bno = ctx.query.bno;
@@ -51,7 +53,7 @@ export default function Update({board}) {
                                   rows="7" cols="55" value={contents} /></div>
 
                     <div><label></label>
-                        <div className="g-recaptcha cap" data-sitekey="6LdC4OskAAAAACUPLtU0oBNsB0nBRc4HAZXp0I9i"></div>
+                        <div className="g-recaptcha cap" data-sitekey={process.env.SITE_KEY}></div>
                     </div>
 
                     <div><label></label>
@@ -64,3 +66,9 @@ export default function Update({board}) {
     );
 
 }
+
+Update.getLayout = (page) => (
+    <Layout meta={{title: '게시판 수정하기'}}>
+        {page}
+    </Layout>
+);

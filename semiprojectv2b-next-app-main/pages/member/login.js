@@ -1,7 +1,8 @@
-import {handleInput, process_submit} from "../../models/Utils";
-import axios from "axios";
-import {useState} from "react";
+import React, {useState} from "react";
+import {handleInput} from "../../components/Utils";
 import {getSession, signIn, useSession} from "next-auth/client";
+import Layout from "../../components/layout/Layout";
+import Home from "../index";
 
 export async function getServerSideProps(ctx) {
     //세션 객체 가져오기
@@ -66,3 +67,9 @@ export default function Login() {
       </main>
   )
 }
+
+Login.getLayout = (page) => (
+    <Layout meta={{title: '로그인'}}>
+        {page}
+    </Layout>
+);

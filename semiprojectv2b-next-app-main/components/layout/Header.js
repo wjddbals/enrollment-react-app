@@ -18,8 +18,11 @@ const Header = ({menu}) => {
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><a href="/member/join">회원가입</a></li>
-                    {/*문자열을 html태그로 출력-dagerouslysetInnerHTML*/}
-                    <li dangerouslySetInnerHTML={{__html:menu}}></li>
+
+                    {/* 문자열을 html 태그로 출력 - dangerouslySetInnerHTML */}
+                    <li dangerouslySetInnerHTML={{ __html: menu }}></li>
+
+
                     <li><Link href="/board/list">게시판</Link></li>
                     <li><Link href="/member/myinfo">회원정보</Link></li>
                 </ul>
